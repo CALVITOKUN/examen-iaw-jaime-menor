@@ -25,7 +25,7 @@ console.log("Has invertido ==> " + DineroIngresa + "€ al " + InteresAnual + "%
     console.log("la aleatoriedad ha sido ==> " + PorcentajeAleatoriedad + " %")
 
     if(sumacapitaprevisto){
-        capitalfinal = Number(sumacapitaprevisto * Number(PorcentajeAleatoriedad/100))
-        console.log("El capital final es:" + capitalfinal + "€")
+        capitalfinal = Number(sumacapitaprevisto * Number(PorcentajeAleatoriedad/100))+Number(DineroIngresa)
+        console.log("El capital final es:" + Math.ceil(capitalfinal) + "€")
     }
 
